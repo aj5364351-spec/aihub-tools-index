@@ -272,7 +272,7 @@
     opacity: 0;
     pointer-events: none;
     will-change: width, opacity;
-    transition: width 600ms cubic-bezier(0.87, 0, 0.13, 1), opacity 400ms cubic-bezier(0.87, 0, 0.13, 1);
+    transition: width 2000ms cubic-bezier(0.87, 0, 0.13, 1), opacity 700ms cubic-bezier(0.87, 0, 0.13, 1);
   }
   .masthead__search.is-extended {
     --search-width: 100%;
@@ -317,7 +317,7 @@
     background-color: rgba(247, 246, 242, 0);
     border: 0;
     padding-block: var(--sp-lg);
-    transition: background-color 700ms cubic-bezier(0.16, 1, 0.3, 1);
+    transition: background-color 2300ms cubic-bezier(0.16, 1, 0.3, 1);
   }
   .filter-bar::before,
   .filter-bar::after {
@@ -325,7 +325,7 @@
     transform: translateX(-50%);
     background: var(--hairline); opacity: var(--rule-opacity);
     pointer-events: none; will-change: width, opacity;
-    transition: width 600ms cubic-bezier(0.87, 0, 0.13, 1), opacity 400ms cubic-bezier(0.87, 0, 0.13, 1);
+    transition: width 2000ms cubic-bezier(0.87, 0, 0.13, 1), opacity 700ms cubic-bezier(0.87, 0, 0.13, 1);
   }
   .filter-bar::before { top: 0; }
   .filter-bar::after { bottom: 0; }
@@ -376,7 +376,7 @@
   .filter-bar__divider {
     height: 1px; background: var(--hairline); width: var(--rule-width);
     margin-inline: auto; opacity: var(--rule-opacity); will-change: width, opacity;
-    transition: width 600ms cubic-bezier(0.87, 0, 0.13, 1), opacity 400ms cubic-bezier(0.87, 0, 0.13, 1);
+    transition: width 2000ms cubic-bezier(0.87, 0, 0.13, 1), opacity 700ms cubic-bezier(0.87, 0, 0.13, 1);
   }
   @media (prefers-reduced-motion: reduce) {
     .filter-bar__divider { transition: none; will-change: auto; }
@@ -1263,7 +1263,7 @@
           fontsReady.catch(function () {}).then(function () {
             window.setTimeout(function () {
               searchShell.classList.add("is-extended");
-            }, 650);
+            }, 150);
           });
         }
         function waitForUserFocus() {
